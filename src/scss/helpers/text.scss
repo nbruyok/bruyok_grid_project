@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url("../assets/fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url("../assets/fonts/Gilroy-Medium.ttf");
+}
+@font-face {
+  font-family: Gilroy-Semibold;
+  src: url("../assets/fonts/Gilroy-Semibold.ttf");
+}
+
+body,
+button {
+  color: $color_text;
+}
+
+@mixin title($size) {
+  font-family: Gilroy-Bold;
+  font-size: $size;
+}
+
+h2 {
+  @include title(30px);
+}
+
+h3 {
+  @include title(20px);
+}
+
+@mixin subtitle($size) {
+  font-family: Gilroy-Medium;
+  font-size: $size;
+}

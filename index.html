@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="dist/fontawesome-fonts.css" />
+    <link rel="stylesheet" href="dist/fontawesome.min.css" />
+    <link
+      rel="stylesheet"
+      href=" https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"
+    />
+    <link rel="stylesheet" href="dist/main.css" />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <nav class="sidebar">
+        <div class="logo">
+          <a href="" class="logo__link">
+            <i class="fab fa-vk"></i>
+          </a>
+        </div>
+        <div class="menu">
+          <ul class="menu-list">
+            <li>
+              <i class="fas fa-home"></i>
+            </li>
+            <li>
+              <i class="fas fa-calendar-minus"></i>
+            </li>
+            <li>
+              <i class="fas fa-user-friends"></i>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+            </li>
+            <li>
+              <i class="fas fa-play"></i>
+            </li>
+            <li>
+              <i class="fas fa-poll"></i>
+            </li>
+            <li>
+              <i class="fas fa-cog"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="button-swipe">
+          <button class="tumbler">
+            <img src="assets/images/tumbler.png" alt="tumbler" />
+          </button>
+        </div>
+      </nav>
+
+      <main class="dashboard__main">
+        <div class="header">
+          <div class="header__left">
+            <h2 class="header__title">Statistics</h2>
+            <div>
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <input
+                class="header__search"
+                type="search"
+                id="gsearch"
+                name="gsearch"
+                placeholder="Search"
+              />
+            </div>
+
+            <a href="" class="header__link">
+              <i class="fas fa-bell"></i>
+            </a>
+          </div>
+
+          <button class="user">
+            <p>Anya</p>
+            <img src="assets/images/name.png" alt="name" />
+            <i class="fas fa-angle-down"></i>
+          </button>
+        </div>
+
+        <div class="dashboard__grid">
+          <div class="friends grid__item">
+            <div class="grid__item-top">
+              <h3 class="grid__title">Friends</h3>
+              <i class="dark-grey fas fa-ellipsis-h"></i>
+            </div>
+            <div class="numbers">
+              <span>271 people</span>
+              <div>
+                <span class="dark-grey">+ 0,7%</span>
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="visitors grid__item">
+            <div class="grid__item-top">
+              <h3 class="grid__title">Unique visitors</h3>
+              <i class="dark-grey fas fa-ellipsis-h"></i>
+            </div>
+            <div class="numbers">
+              <span>69 people</span>
+              <div>
+                <span class="dark-grey">- 1,7%</span>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="followers grid__item">
+            <div class="grid__item-top">
+              <h3 class="grid__title">Followers</h3>
+              <i class="dark-grey fas fa-ellipsis-h"></i>
+            </div>
+            <div class="numbers">
+              <span>288 people</span>
+              <div>
+                <span class="dark-grey">+ 1%</span>
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="audience grid__item">
+            <div class="grid__item-top">
+              <h3 class="grid__title">Audience reach</h3>
+              <div class="filters">
+                <div class="date-range">
+                  <span>31/01/2020 – 06/02/2020</span>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="checkboxes">
+                  <input
+                    class="total"
+                    type="checkbox"
+                    id="total"
+                    name="total"
+                    value="true"
+                  />
+                  <label for="total">Total</label>
+                  <input
+                    class="follower"
+                    type="checkbox"
+                    id="follower"
+                    name="follower"
+                    value="true"
+                  />
+                  <label for="total">Follower</label>
+                </div>
+              </div>
+            </div>
+            <img src="assets/images/total-follower.png" alt="" />
+          </div>
+
+          <div class="devices grid__item">
+            <h3 class="grid__title">Reach by device</h3>
+            <img src="assets/images/pie-chart-2.png" alt="" class="pie-chart" />
+          </div>
+
+          <div class="gender-age grid__item">
+            <div class="grid__item-top">
+              <h3 class="grid__title">Gender / Age</h3>
+              <div class="gender">
+                <div class="pretty p-default p-curve p-fill women">
+                  <input type="checkbox" />
+                  <div class="state">
+                    <label>women</label>
+                  </div>
+                </div>
+                <div class="pretty p-default p-curve p-fill man">
+                  <input type="checkbox" />
+                  <div class="state">
+                    <label>man</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="assets/images/Group 126.png" alt="" class="age" />
+          </div>
+
+          <div class="geo grid__item">
+            <div class="grid__item-top">
+              <h3 class="grid__title">Geo</h3>
+              <div>
+                <button>Country</button>
+                <button>City</button>
+              </div>
+            </div>
+            <img src="assets/images/geo.png" alt="" />
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

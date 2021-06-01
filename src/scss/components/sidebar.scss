@@ -1,0 +1,50 @@
+.sidebar {
+  width: 100px;
+  height: 100vh;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border: 1px solid $color_border;
+  background: $color_bg-item;
+
+  overflow: hidden;
+
+  position: fixed;
+  left: 0;
+  height: 100%;
+}
+
+.fab.fa-vk {
+  font-size: 42px;
+  color: $color_1;
+}
+
+.menu-list {
+  i {
+    font-size: 25px;
+    color: $color_text;
+  }
+
+  i:hover {
+    color: $color_1;
+    transition: 0.5s;
+  }
+}
+
+.menu-list li:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.tumbler {
+  border-radius: 15px;
+  background: $color_bg-item;
+
+  img {
+    height: 30px;
+    padding: 0 20px;
+  }
+}
